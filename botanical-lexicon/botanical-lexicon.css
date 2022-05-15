@@ -1,0 +1,99 @@
+@font-face {
+	font-family: 'Dwarvish';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../shared/fonts/DTSDwarvish.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sylvan';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../shared/fonts/Rellanic.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sylvan';
+	font-style: italic;
+	font-weight: normal;
+	src: url('../shared/fonts/Rellanic\ Italic.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sylvan';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../shared/fonts/Rellanic\ Bold.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sylvan';
+	font-style: italic;
+	font-weight: bold;
+	src: url('../shared/fonts/Rellanic\ Bold\ Italic.otf') format('truetype');
+}
+
+.page-cover {
+	border: 1px solid #000000;
+	box-shadow: -2px 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.page-cover.front {
+	background-image: url("./images/Cover.png");
+	background-position: right;
+
+	border-radius: 0px 10px 10px 0px;
+}
+
+.page-cover.back {
+	background-image: url("./images/Cover.png");
+	background-position: left;
+
+	border-radius: 10px 0px 0px 10px;
+}
+
+.page-cover .page-header {
+	margin: 40px 0px 0px 0px;
+
+	background-color: rgba(255, 215, 0, 0.8);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	font-size: 80px;
+	font-family: Sylvan;
+	line-height: 100px;
+	text-align: center;
+	text-shadow: rgba(45, 45, 45, 0.5) 1px 1px 1px;
+	color: transparent;
+}
+
+.page-cover .page-header-small {
+	margin: 20x 0px 0px 0px;
+
+	background-color: rgba(45, 45, 45, 0.8);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	font-size: 20px;
+	font-family: Dwarvish;
+	text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.7) 1px 1px 1px;
+	color: transparent;
+}
+
+.page-cover-inside.--left,
+#fake-cover-inside.--left {
+	border-radius: 10px 0px 0px 10px;
+}
+
+.page-cover-inside.--right,
+#fake-cover-inside.--right {
+	border-radius: 0px 10px 10px 0px;
+}
+
+#fake-cover-inside,
+.stf__hardShadow {
+	border-radius: 10px;
+}
