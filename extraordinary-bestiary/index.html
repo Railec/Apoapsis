@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="../shared/page-flip.browser.js"></script>
+	<script src="../shared/initPageFlip.js"></script>
+	<link href="../shared/book-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="initPageFlip('bestiary')">
+	<div class="book-container" id="bestiary">
+		<div class="page-container page-cover">
+			Text Cover
+		</div>
+		<div class="page-container page-cover-inside"></div>
+		<div class="page-container page-content">
+			Text Page 1
+		</div>
+		<div class="page-container page-content">
+			Text Page 2
+		</div>
+		<div class="page-container page-content">
+			Text Page 3
+		</div>
+		<div class="page-container page-content">
+			Text Page 4
+		</div>
+		<div class="page-container page-content">
+			Text Page 5
+		</div>
+		<div class="page-container page-cover-inside"></div>
+		<div class="page-container page-cover"></div>
+	</div>
+	<svg>
+		<filter id="wavy">
+			<feturbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2"></feturbulence>
+			<feDisplacementMap in="SourceGraphic" scale="5" />
+		</filter>
+	</svg>
+</body>
+
+</html>
