@@ -41,15 +41,11 @@
 .page-cover.front {
 	background-image: url("./images/Cover.png");
 	background-position: right;
-
-	border-radius: 0px 10px 10px 0px;
 }
 
 .page-cover.back {
 	background-image: url("./images/Cover.png");
 	background-position: left;
-
-	border-radius: 10px 0px 0px 10px;
 }
 
 .page-cover .page-header {
@@ -83,17 +79,6 @@
 	color: transparent;
 }
 
-.page-cover-inside.--left,
-#fake-cover-inside.--left {
-	border-radius: 10px 0px 0px 10px;
-}
-
-.page-cover-inside.--right,
-#fake-cover-inside.--right {
-	border-radius: 0px 10px 10px 0px;
-}
-
-#fake-cover-inside,
-.stf__hardShadow {
-	border-radius: 10px;
+.page-cover-inside {
+	border: solid 1px #004000;
 }

@@ -5,12 +5,16 @@
 	<script src="../shared/page-flip.browser.js"></script>
 	<script src="../shared/initPageFlip.js"></script>
 	<link href="../shared/book-style.css" rel="stylesheet" type="text/css" />
+	<link href="extraordinary-bestiary.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body onload="initPageFlip('bestiary')">
 	<div class="book-container" id="bestiary">
-		<div class="page-container page-cover">
-			Text Cover
+		<div class="page-container page-cover front">
+			<div class="page-header" alt="book describing strange creatures">Parma Ostecie<br />Aie Raucor</div>
+			<div class="page-header-small" alt="book explaining creatures strange -> Fahani mahikhrêm kabâr durjâ">
+				fahani mahiKrEm kabAr durjA
+			</div>
 		</div>
 		<div class="page-container page-cover-inside"></div>
 		<div class="page-container page-content">
@@ -29,7 +33,7 @@
 			Text Page 5
 		</div>
 		<div class="page-container page-cover-inside"></div>
-		<div class="page-container page-cover"></div>
+		<div class="page-container page-cover back"></div>
 	</div>
 	<svg>
 		<filter id="wavy">

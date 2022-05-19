@@ -8,6 +8,7 @@ const settings = {
 	maxShadowOpacity: 0.2,
 
 	autoSize: true,
+	usePortrait: false,
 	showCover: true
 };
 var pageFlip = null;
