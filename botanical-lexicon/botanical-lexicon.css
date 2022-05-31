@@ -1,38 +1,3 @@
-@font-face {
-	font-family: 'Dwarvish';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../shared/fonts/DTSDwarvish.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Sylvan';
-	font-style: normal;
-	font-weight: normal;
-	src: url('../shared/fonts/Rellanic.otf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Sylvan';
-	font-style: italic;
-	font-weight: normal;
-	src: url('../shared/fonts/Rellanic\ Italic.otf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Sylvan';
-	font-style: normal;
-	font-weight: bold;
-	src: url('../shared/fonts/Rellanic\ Bold.otf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Sylvan';
-	font-style: italic;
-	font-weight: bold;
-	src: url('../shared/fonts/Rellanic\ Bold\ Italic.otf') format('truetype');
-}
-
 .page-cover {
 	border: 1px solid #000000;
 	box-shadow: -2px 0 5px 2px rgba(0, 0, 0, 0.4);
@@ -81,4 +46,158 @@
 
 .page-cover-inside {
 	border: solid 1px #004000;
+}
+
+.page-content .decorative-corner {
+	height: 100px;
+	width: 100px;
+	
+	position: absolute;
+
+	background-image: url("./images/Corner.png");
+}
+.page-content.--left .decorative-corner {
+	left: 11px;
+	transform:scaleX(-1);
+}
+.page-content.--right .decorative-corner {
+	right: 11px;
+}
+.page-content .decorative-corner.top {
+	top: 5px;
+}
+.page-content .decorative-corner.bottom {
+	bottom: 5px;
+	transform:scaleY(-1);	
+}
+.page-content.--left .decorative-corner.bottom {
+	transform:scale(-1)
+}
+
+.page-content .page-header {
+	width: 100%;
+	height: 50px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+
+	font-size: 30px;
+	font-family: 'Ananda';
+}
+
+.page-content .page-section {
+	min-height: 100px;
+	
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.page-content.--left .page-align-left .page-header,
+.page-content.--left .page-align-left .page-section {
+	padding-left: 200px;
+}
+.page-content.--right .page-align-left .page-header,
+.page-content.--right .page-align-left .page-section {
+	padding-left: 226px;
+}
+.page-content.--left .page-align-right .page-header,
+.page-content.--left .page-align-right .page-section {
+	padding-right: 226px;
+}
+.page-content.--right .page-align-right .page-header,
+.page-content.--right .page-align-right .page-section {
+	padding-right: 200px;
+}
+.page-content.--left .page-align-left .page-section ~ .page-section,
+.page-content.--right .page-align-left .page-section ~ .page-section,
+.page-content.--left .page-align-right .page-section ~ .page-section,
+.page-content.--right .page-align-right .page-section ~ .page-section {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.page-content .page-image-small {
+	position: absolute;
+	top: 20px;
+
+	width: 200px;
+	height: 200px;
+
+	overflow: hidden;
+
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	border-radius: 0px 0px 10px 10px;
+}
+.page-content.--left .page-align-left .page-image-small {
+	left: 26px;
+	border-right: 1px solid rgba(0,0,0,0.4);
+	border-top-right-radius: 10px;
+}
+.page-content.--left .page-align-right .page-image-small {
+	right: 14px;
+	border-left: 1px solid rgba(0,0,0,0.4);
+	border-top-left-radius: 10px;
+}
+.page-content.--right .page-align-left .page-image-small {
+	left: 14px;
+	border-right: 1px solid rgba(0,0,0,0.4);
+	border-top-right-radius: 10px;
+}
+.page-content.--right .page-align-right .page-image-small {
+	right: 26px;
+	border-left: 1px solid rgba(0,0,0,0.4);
+	border-top-left-radius: 10px;
+}
+
+.page-content .page-section .page-section-header {
+	padding-top: 5px;
+	margin-bottom: 10px;
+
+	font-size: 20px;
+	font-family: 'Ananda';
+}
+
+.page-content .separator-line {
+	width: 100%;
+	height: 4px;
+}
+.page-content .separator-line::before {
+	content: "";
+	display: block;
+
+	width: 50%;
+	height: 4px;
+
+	position: relative;
+	top: 2px;
+
+	border-top: 1px solid rgba(0,0,0,0.4);
+}
+.page-content .separator-line::after {
+	content: "";
+	display: block;
+
+	width: 50%;
+	height: 4px;
+
+	position: relative;
+	top: -5px;
+	left: 50%;
+
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+.page-content .page-align-left .separator-line::before {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.page-content .page-align-left .separator-line::after {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.page-content .page-align-right .separator-line::before {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.page-content .page-align-right .separator-line::after {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }

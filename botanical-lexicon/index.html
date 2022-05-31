@@ -3,12 +3,66 @@
 
 <head>
 	<script src="../shared/page-flip.browser.js"></script>
-	<script src="../shared/initPageFlip.js"></script>
+	<script src="../shared/pageFlipInit.js"></script>
+	<script src="../shared/pageFlipUtility.js"></script>
+	<script>
+		var pages = [
+			"Text Page 1",
+			constructPageWithImage({
+				pageAlign: 'left',
+				pageHeader: 'Grass',
+				imageSrc: '',
+				sections: [
+					{
+						header: 'Align:',
+						content: 'Left'
+					},
+					{
+						header: 'Test',
+						content: 'Oh boy'
+					}
+				]
+			}),
+			constructPageWithImage({
+				pageAlign: 'left',
+				pageHeader: 'Poppy',
+				imageSrc: '',
+				sections: [
+					{
+						header: 'Align:',
+						content: 'Left'
+					}
+				]
+			}),
+			constructPageWithImage({
+				pageAlign: 'right',
+				pageHeader: 'Dandelion',
+				imageSrc: '',
+				sections: [
+					{
+						header: 'Align:',
+						content: 'Right'
+					}
+				]
+			}),
+			constructPageWithImage({
+				pageAlign: 'right',
+				pageHeader: 'Oregano',
+				imageSrc: '',
+				sections: [
+					{
+						header: 'Align:',
+						content: 'Right'
+					}
+				]
+			})
+		];
+	</script>
 	<link href="../shared/book-style.css" rel="stylesheet" type="text/css" />
 	<link href="botanical-lexicon.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="initPageFlip('botanical')">
+<body onload="appendPages('botanical', pages); pageFlipInit('botanical');">
 	<div class="book-container" id="botanical">
 		<div class="page-container page-cover front">
 			<div class="page-header" title="book describing plants -> Parma ostecie laimar">
@@ -19,21 +73,6 @@
 			</div>
 		</div>
 		<div class="page-container page-cover-inside"></div>
-		<div class="page-container page-content">
-			Text Page 1
-		</div>
-		<div class="page-container page-content">
-			Text Page 2
-		</div>
-		<div class="page-container page-content">
-			Text Page 3
-		</div>
-		<div class="page-container page-content">
-			Text Page 4
-		</div>
-		<div class="page-container page-content">
-			Text Page 5
-		</div>
 		<div class="page-container page-cover-inside"></div>
 		<div class="page-container page-cover back"></div>
 	</div>

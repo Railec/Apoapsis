@@ -1,3 +1,52 @@
+@font-face {
+	font-family: 'Dwarvish';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/DTSDwarvish.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sylvan';
+	font-style: normal;
+	font-weight: normal;
+	src: url('./fonts/Rellanic.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sylvan';
+	font-style: italic;
+	font-weight: normal;
+	src: url('./fonts/Rellanic\ Italic.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sylvan';
+	font-style: normal;
+	font-weight: bold;
+	src: url('./fonts/Rellanic\ Bold.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sylvan';
+	font-style: italic;
+	font-weight: bold;
+	src: url('./fonts/Rellanic\ Bold\ Italic.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Ananda';
+	font-style: normal;
+	font-weight: normal;
+	src: url('./fonts/Ananda.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Ananda';
+	font-style: normal;
+	font-weight: bold;
+	src: url('./fonts/Ananda\ Bold.ttf') format('truetype');
+}
+
 *,
 ::after,
 ::before {
@@ -19,23 +68,31 @@ body {
 }
 
 .page-container {
-	padding: 20px;
+	padding: 40px 20px 40px 20px;
 
 	overflow: hidden;
 }
 
 .page-container.--left {
 	border-right: solid 1px rgba(36, 10, 3, 0.5);
+	padding-left: 51px;
 }
 
 .page-container.--right {
 	border-left: solid 1px rgba(36, 10, 3, 0.5);
+	padding-right: 51px;
 }
 
 .page-cover {
 	background: #e3d0b5;
 	border: solid 1px #998466;
 	box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+.page-cover.--left {
+	padding-left: 20px;
+}
+.page-cover.--right {
+	padding-right: 20px;
 }
 
 .page-cover.front {
