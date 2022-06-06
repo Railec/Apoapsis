@@ -47,3 +47,146 @@
 .page-cover-inside {
 	border: solid 1px #400000;
 }
+
+.page-content .decorative-corner {
+	height: 100px;
+	width: 100px;
+	
+	position: absolute;
+
+	background-image: url("./images/Corner.png");
+}
+.page-content.--left .decorative-corner {
+	left: 11px;
+	transform:scaleX(-1);
+}
+.page-content.--right .decorative-corner {
+	right: 11px;
+}
+.page-content .decorative-corner.top {
+	top: 5px;
+}
+.page-content .decorative-corner.bottom {
+	bottom: 5px;
+	transform:scaleY(-1);	
+}
+.page-content.--left .decorative-corner.bottom {
+	transform:scale(-1)
+}
+
+.page-content .page-header {
+	width: 100%;
+	height: 50px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+
+	font-size: 30px;
+	font-family: 'Ananda';
+}
+
+.page-content .page-section {
+	min-height: 100px;
+	
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.page-content .page-image-large {
+
+	position: relative;
+	width: 100%;
+	height: 530px;
+
+	overflow: hidden;
+
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	border-radius: 0px 0px 10px 10px;
+
+	margin-bottom: 20px;
+}
+
+.page-content .page-image-large::before {
+	content: "";
+	display: block;
+
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	right: -8px;
+	bottom: 0px;
+
+	box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.page-content .page-image-large img {
+	height: 100%;
+
+	display: block;
+
+	margin: auto;
+}
+
+.page-content .page-section .page-section-header {
+	padding-top: 5px;
+	margin-bottom: 10px;
+
+	font-size: 20px;
+	font-family: 'Ananda';
+}
+
+.page-content .page-section.danger-rating-high {
+	min-height: auto;
+
+	background-color: rgba(255, 0, 0, 0.8);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	color: transparent;
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 1px;
+
+	padding-top: 0px;
+	margin-bottom: 10px;
+}
+
+.page-content .page-section.description-short {
+	min-height: auto;
+
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+
+.page-content .separator-line {
+	width: 100%;
+	height: 4px;
+}
+.page-content .separator-line::before {
+	content: "";
+	display: block;
+
+	width: 50%;
+	height: 4px;
+
+	position: relative;
+	top: 2px;
+
+	border-top: 1px solid rgba(0,0,0,0.4);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.page-content .separator-line::after {
+	content: "";
+	display: block;
+
+	width: 50%;
+	height: 4px;
+
+	position: relative;
+	top: -5px;
+	left: 50%;
+
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

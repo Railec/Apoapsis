@@ -42,34 +42,35 @@ function appendPages(bookId, pages) {
 //  sections: [
 //      {
 //          header: string | null | undefined,
-//          content: string | null | undefined
+//          content: string | null | undefined,
+//          extraClass: string | null | undefined
 //      },
 //  ]
 //}
-function constructPageWithImage(pageData) {
+function constructPageWithSmallImage(pageData) {
     //Validate pageData JSON structure.
     var error = false;
     var align = 'left';
     if(!pageData.hasOwnProperty('pageAlign')) {
-        console.warn("constructPageWithImage: JSON Error: No 'pageAlign' property found. Assuming 'left' alignment.")
+        console.warn("constructPageWithSmallImage: JSON Error: No 'pageAlign' property found. Assuming 'left' alignment.")
     } else if(pageData.pageAlign != 'left' && pageData.pageAlign != 'right') {
-        console.warn("constructPageWithImage: JSON Error: 'pageAlign' isn't 'left' or 'right'. Assuming 'left' alignment.")
+        console.warn("constructPageWithSmallImage: JSON Error: 'pageAlign' isn't 'left' or 'right'. Assuming 'left' alignment.")
     } else {
         align = pageData.pageAlign;
     }
     if(!pageData.hasOwnProperty('pageHeader')) {
-        console.error("constructPageWithImage: JSON Error: No 'pageHeader' property found.");
+        console.error("constructPageWithSmallImage: JSON Error: No 'pageHeader' property found.");
         error = true;
     }
     if(!pageData.hasOwnProperty('imageSrc')) {
-        console.error("constructPageWithImage: JSON Error: No 'imageSrc' property found.");
+        console.error("constructPageWithSmallImage: JSON Error: No 'imageSrc' property found.");
         error = true;
     }
     if(!pageData.hasOwnProperty('sections')) {
-        console.error("constructPageWithImage: JSON Error: No 'sections' property found.");
+        console.error("constructPageWithSmallImage: JSON Error: No 'sections' property found.");
         error = true;
     } else if(!Array.isArray(pageData.sections)) {
-        console.error("constructPageWithImage: JSON Error: 'sections' property isn't an Array");
+        console.error("constructPageWithSmallImage: JSON Error: 'sections' property isn't an Array");
         error = true;
     }
     
@@ -87,7 +88,145 @@ function constructPageWithImage(pageData) {
     html+="</div>";
     if(pageData.sections.length > 0) {
         for(var id in pageData.sections) {
-            html+= "<div class='page-section'>";
+            var extraClass = "";
+            if(pageData.sections[id].hasOwnProperty('extraClass')
+            && pageData.sections[id].extraClass != null) {
+                extraClass = " "+pageData.sections[id].extraClass;
+            }
+            html+= "<div class='page-section"+extraClass+"'>";
+            if(pageData.sections[id].hasOwnProperty('header')
+            && pageData.sections[id].header != null
+            && pageData.sections[id].header != "") {
+                html+="<div class='page-section-header'>";
+                html+=pageData.sections[id].header;
+                html+="<div class='separator-line'></div>"
+                html+="</div>";
+            }
+            if(pageData.sections[id].hasOwnProperty('content')
+            && pageData.sections[id].content != null
+            && pageData.sections[id].content != "") {
+                html+="<div class='page-section-content'>"+pageData.sections[id].content+"</div>";
+            }
+            html+="</div>"
+        }
+    }
+    html+="</div>";
+
+    return html;
+}
+
+//Expects a pageData JSON object with the following structure:
+//{
+//  pageHeader: string,
+//  imageSrc: string,
+//  sections: [
+//      {
+//          header: string | null | undefined,
+//          content: string | null | undefined,
+//          extraClass: string | null | undefined
+//      },
+//  ]
+//}
+function constructPageWithLargeImage(pageData) {
+    //Validate pageData JSON structure.
+    var error = false;
+    if(!pageData.hasOwnProperty('pageHeader')) {
+        console.error("constructPageWithLargeImage: JSON Error: No 'pageHeader' property found.");
+        error = true;
+    }
+    if(!pageData.hasOwnProperty('imageSrc')) {
+        console.error("constructPageWithLargeImage: JSON Error: No 'imageSrc' property found.");
+        error = true;
+    }
+    if(!pageData.hasOwnProperty('sections')) {
+        console.error("constructPageWithLargeImage: JSON Error: No 'sections' property found.");
+        error = true;
+    } else if(!Array.isArray(pageData.sections)) {
+        console.error("constructPageWithLargeImage: JSON Error: 'sections' property isn't an Array");
+        error = true;
+    }
+    
+    if(error) return "";
+
+    var html = "<div class='page-image-large'>";
+    if(pageData.imageSrc != "") {
+            html+="<img src='"+pageData.imageSrc+"'/>";
+    }
+    html+="</div>";
+    html+="<div class='page-header'>";
+    html+=pageData.pageHeader;
+    html+="<div class='separator-line'></div>";
+    html+="</div>";
+    if(pageData.sections.length > 0) {
+        for(var id in pageData.sections) {
+            var extraClass = "";
+            if(pageData.sections[id].hasOwnProperty('extraClass')
+            && pageData.sections[id].extraClass != null) {
+                extraClass = " "+pageData.sections[id].extraClass;
+            }
+            html+= "<div class='page-section"+extraClass+"'>";
+            if(pageData.sections[id].hasOwnProperty('header')
+            && pageData.sections[id].header != null
+            && pageData.sections[id].header != "") {
+                html+="<div class='page-section-header'>";
+                html+=pageData.sections[id].header;
+                html+="<div class='separator-line'></div>"
+                html+="</div>";
+            }
+            if(pageData.sections[id].hasOwnProperty('content')
+            && pageData.sections[id].content != null
+            && pageData.sections[id].content != "") {
+                html+="<div class='page-section-content'>"+pageData.sections[id].content+"</div>";
+            }
+            html+="</div>"
+        }
+    }
+    html+="</div>";
+
+    return html;
+}
+
+//Expects a pageData JSON object with the following structure:
+//{
+//  pageHeader: string | null | undefined,
+//  sections: [
+//      {
+//          header: string | null | undefined,
+//          content: string | null | undefined,
+//          extraClass: string | null | undefined
+//      },
+//  ]
+//}
+function constructPage(pageData) {
+    //Validate pageData JSON structure.
+    var error = false;
+    if(!pageData.hasOwnProperty('sections')) {
+        console.error("constructPage: JSON Error: No 'sections' property found.");
+        error = true;
+    } else if(!Array.isArray(pageData.sections)) {
+        console.error("constructPage: JSON Error: 'sections' property isn't an Array");
+        error = true;
+    }
+    
+    if(error) return "";
+
+    var html = "";
+    if(pageData.hasOwnProperty('pageHeader')
+    && pageData.pageHeader != null
+    && pageData.pageHeader != "") {
+        html+="<div class='page-header'>";
+        html+=pageData.pageHeader;
+        html+="<div class='separator-line'></div>";
+        html+="</div>";
+    }
+    if(pageData.sections.length > 0) {
+        for(var id in pageData.sections) {
+            var extraClass = "";
+            if(pageData.sections[id].hasOwnProperty('extraClass')
+            && pageData.sections[id].extraClass != null) {
+                extraClass = " "+pageData.sections[id].extraClass;
+            }
+            html+= "<div class='page-section"+extraClass+"'>";
             if(pageData.sections[id].hasOwnProperty('header')
             && pageData.sections[id].header != null
             && pageData.sections[id].header != "") {

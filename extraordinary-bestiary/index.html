@@ -5,11 +5,96 @@
 	<script src="../shared/page-flip.browser.js"></script>
 	<script src="../shared/pageFlipInit.js"></script>
 	<script src="../shared/pageFlipUtility.js"></script>
+	<script>
+		var pages = [
+			constructPage({
+				pageHeader: 'Introduction',
+				sections: [
+					{
+
+					}
+				]
+			}),
+			constructPageWithLargeImage({
+				pageHeader: 'Barbed Devil',
+				imageSrc: './images/entry_barbed_devil.png',
+				sections: [
+					{
+						content: 'Murderous',
+						extraClass: 'danger-rating-high'
+					},
+					{
+						content: 'A dangerous fiend whose layer of barbs offer protection against most weaponry and whose sharp claws easily rend flesh.',
+						extraClass: 'description-short'
+					}
+				]
+			}),
+			constructPage({
+				sections: [
+					{
+						header: 'Physical Characteristics',
+						content: ''
+					},
+					{
+						header: 'Observed Behaviours',
+						content: ''
+					},
+					{
+						header: 'Offensive Capabilities',
+						content: ''
+					},
+					{
+						header: 'Defensive Capabilities',
+						content: ''
+					},
+					{
+						header: 'Examination Notes'
+					}
+				]
+			}),
+			constructPageWithLargeImage({
+				pageHeader: 'Shadow',
+				imageSrc: './images/entry_shadow.png',
+				sections: [
+					{
+						content: 'Stealthy, Murderous',
+						extraClass: 'danger-rating-high'
+					},
+					{
+						content: 'A dangerous creature made of a blackened amorphous ooze. It hides in shadows and darkened rafters. It\'s attacks drain one\'s life essence.'
+					}
+				]
+			}),
+			constructPage({
+				sections: [
+					{
+						header: 'Physical Characteristics',
+						content: ''
+					},
+					{
+						header: 'Observed Behaviours',
+						content: ''
+					},
+					{
+						header: 'Offensive Capabilities',
+						content: ''
+					},
+					{
+						header: 'Defensive Capabilities',
+						content: ''
+					},
+					{
+						header: 'Examination Notes'
+					}
+				]
+			})
+		];
+	</script>
 	<link href="../shared/book-style.css" rel="stylesheet" type="text/css" />
 	<link href="extraordinary-bestiary.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="pageFlipInit('bestiary')">
+<body onload="appendPages('bestiary', pages); pageFlipInit('bestiary')">
 	<div class="book-container" id="bestiary">
 		<div class="page-container page-cover front">
 			<div class="page-header" title="book describing strange creatures -> Parma ostecie aie raucor">
@@ -20,21 +105,6 @@
 			</div>
 		</div>
 		<div class="page-container page-cover-inside"></div>
-		<div class="page-container page-content">
-			Text Page 1
-		</div>
-		<div class="page-container page-content">
-			Text Page 2
-		</div>
-		<div class="page-container page-content">
-			Text Page 3
-		</div>
-		<div class="page-container page-content">
-			Text Page 4
-		</div>
-		<div class="page-container page-content">
-			Text Page 5
-		</div>
 		<div class="page-container page-cover-inside"></div>
 		<div class="page-container page-cover back"></div>
 	</div>
