@@ -47,6 +47,20 @@
 	src: url('./fonts/Ananda\ Bold.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Merienda';
+	font-style: normal;
+	font-weight: normal;
+	src: url('./fonts/Merienda-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Merienda';
+	font-style: normal;
+	font-weight: bold;
+	src: url('./fonts/Merienda-Bold.ttf') format('truetype');
+}
+
 *,
 ::after,
 ::before {
@@ -61,8 +75,16 @@ body {
 	background-size: 100%;
 
 	overflow: clip;
-	
+
 	user-select: none;
+}
+
+span.sylvan {
+	font-family: 'Sylvan';
+}
+
+span.dwarvish {
+	font-family: 'Dwarvish';
 }
 
 .book-container {
@@ -90,9 +112,11 @@ body {
 	border: solid 1px #998466;
 	box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
 }
+
 .page-cover.--left {
 	padding-left: 20px;
 }
+
 .page-cover.--right {
 	padding-right: 20px;
 }

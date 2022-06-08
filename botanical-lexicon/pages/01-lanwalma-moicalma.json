@@ -1,0 +1,34 @@
+{
+	"pageAlign": "left",
+	"pageHeader": "<span class=\"sylvan\" title=\"Lanwalma Moicalma -> Pain-removing Gentle-flower\">Lanwalma&ensp;Moicalma</span>",
+	"imageSrc": "./images/entry_lanwalma_moicalma.png",
+	"sections": [
+		{
+			"content": "&ensp;Gentle Dawnbloom",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				"The Lanwalma Moicalma is a flowering plant found in the wild in very particular locales.",
+				"It has a large variety of uses and many efforts exists to domesticate this plants."
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "Decorative flower, Alchemical ingredient, Medicinal ingredient, Cosmetics ingredient",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": [
+				"The flowers growing on this plant have a distinctly vivid red colour when in bloom,",
+				"otherwise the flower is contained in a desaturated green bulb not unlike the stem.</br>",
+				"The leaves have a distinctly ragged and angular edge and usually grow right where the stem splits.</br>",
+				"At the base of the plant are thicker \"leaves\" that store a lot of moisture.",
+				"These leaves are a deeper shade of green than the plant's stem."
+			],
+			"extraClass": "no-align"
+		}
+	]
+}

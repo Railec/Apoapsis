@@ -6,63 +6,44 @@
 	<script src="../shared/pageFlipInit.js"></script>
 	<script src="../shared/pageFlipUtility.js"></script>
 	<script>
-		var pages = [
-			"Text Page 1",
-			constructPageWithSmallImage({
-				pageAlign: 'left',
-				pageHeader: 'Grass',
-				imageSrc: '',
-				sections: [
-					{
-						header: 'Align:',
-						content: 'Left'
-					},
-					{
-						header: 'Test',
-						content: 'Oh boy'
+		//type = normal | small-image | large-image
+		function Page(path, type = "normal") {
+			return { path: path, type: type };
+		}
+
+		async function onLoad() {
+			var pages = [
+				Page("./pages/00-introduction.json"),
+				Page("./pages/01-lanwalma-moicalma.json", "small-image"),
+				Page("./pages/02-.json", "small-image")
+			];
+
+			var htmlPages = [];
+
+			for (var id in pages) {
+				var json = await PageFlipUtility.loadJSONFromFile(pages[id].path);
+				if (json) {
+					if (pages[id].type == 'normal') {
+						htmlPages.push(PageFlipPages.constructPage(json));
+					} else if (pages[id].type == 'small-image') {
+						htmlPages.push(PageFlipPages.constructPageWithSmallImage(json));
+					} else if (pages[id].type == 'large-image') {
+						htmlPages.push(PageFlipPages.constructPageWithLargeImage(json));
 					}
-				]
-			}),
-			constructPageWithSmallImage({
-				pageAlign: 'left',
-				pageHeader: 'Poppy',
-				imageSrc: '',
-				sections: [
-					{
-						header: 'Align:',
-						content: 'Left'
-					}
-				]
-			}),
-			constructPageWithSmallImage({
-				pageAlign: 'right',
-				pageHeader: 'Dandelion',
-				imageSrc: '',
-				sections: [
-					{
-						header: 'Align:',
-						content: 'Right'
-					}
-				]
-			}),
-			constructPageWithSmallImage({
-				pageAlign: 'right',
-				pageHeader: 'Oregano',
-				imageSrc: '',
-				sections: [
-					{
-						header: 'Align:',
-						content: 'Right'
-					}
-				]
-			})
-		];
+				} else {
+					console.error("onLoad: failed to load and/or parse file '" + pages[id].path + "'.");
+				}
+			}
+
+			appendPages('botanical', htmlPages);
+			pageFlipInit('botanical');
+		}
 	</script>
 	<link href="../shared/book-style.css" rel="stylesheet" type="text/css" />
 	<link href="botanical-lexicon.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="appendPages('botanical', pages); pageFlipInit('botanical');">
+<body onload="onLoad()">
 	<div class="book-container" id="botanical">
 		<div class="page-container page-cover front">
 			<div class="page-header" title="book describing plants -> Parma ostecie laimar">

@@ -51,27 +51,32 @@
 .page-content .decorative-corner {
 	height: 100px;
 	width: 100px;
-	
+
 	position: absolute;
 
 	background-image: url("./images/Corner.png");
 }
+
 .page-content.--left .decorative-corner {
 	left: 11px;
-	transform:scaleX(-1);
+	transform: scaleX(-1);
 }
+
 .page-content.--right .decorative-corner {
 	right: 11px;
 }
+
 .page-content .decorative-corner.top {
 	top: 5px;
 }
+
 .page-content .decorative-corner.bottom {
 	bottom: 5px;
-	transform:scaleY(-1);	
+	transform: scaleY(-1);
 }
+
 .page-content.--left .decorative-corner.bottom {
-	transform:scale(-1)
+	transform: scale(-1)
 }
 
 .page-content .page-header {
@@ -86,9 +91,12 @@
 
 .page-content .page-section {
 	min-height: 100px;
-	
+
 	padding-top: 10px;
 	margin-bottom: 20px;
+
+	font-size: 14px;
+	font-family: 'Merienda', cursive;
 }
 
 .page-content .page-image-large {
@@ -99,7 +107,7 @@
 
 	overflow: hidden;
 
-	border-bottom: 1px solid rgba(0,0,0,0.4);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 	border-radius: 0px 0px 10px 10px;
 
 	margin-bottom: 20px;
@@ -110,9 +118,9 @@
 	display: block;
 
 	position: absolute;
-	top: -8px;
-	left: -8px;
-	right: -8px;
+	top: -9px;
+	left: -9px;
+	right: -9px;
 	bottom: 0px;
 
 	box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
@@ -161,6 +169,7 @@
 	width: 100%;
 	height: 4px;
 }
+
 .page-content .separator-line::before {
 	content: "";
 	display: block;
@@ -171,10 +180,11 @@
 	position: relative;
 	top: 2px;
 
-	border-top: 1px solid rgba(0,0,0,0.4);
+	border-top: 1px solid rgba(0, 0, 0, 0.4);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
+
 .page-content .separator-line::after {
 	content: "";
 	display: block;
@@ -186,7 +196,7 @@
 	top: -5px;
 	left: 50%;
 
-	border-bottom: 1px solid rgba(0,0,0,0.4);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
