@@ -176,12 +176,62 @@
 	box-shadow: inset 4px -4px 4px 0px rgba(0, 0, 0, 0.04)
 }
 
-.page-content .page-section .page-section-header {
-	padding-top: 5px;
-	margin-bottom: 10px;
+.page-content .page-section.chapter-title {
+	min-height: auto;
 
-	font-size: 20px;
-	font-family: 'Ananda';
+	padding-top: 0px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 5px;
+
+	font-size: 18px;
+	text-align: center;
+}
+
+.page-content .page-section.chapter-title.margin-top {
+	margin-top: 200px;
+}
+
+.page-content .page-section.chapter-title .sylvan {
+	font-size: 46px;
+	font-weight: bold;
+}
+
+.page-content .page-section.chapter-title .dwarvish {
+	font-size: 24px;
+}
+
+.page-content .page-section.chapter-title .separator-line {
+	height: 8px;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.page-content .page-section.chapter-title .separator-line::before {
+	top: 0px;
+	height: 8px;
+}
+
+.page-content .page-section.chapter-title.margin-top .separator-line::before {
+	box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.page-content .page-section.chapter-title .separator-line::before {
+	box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.page-content .page-section.chapter-title .separator-line::after {
+	top: -8px;
+	height: 8px;
+}
+
+.page-content .page-section.chapter-title.margin-top .separator-line::after {
+	box-shadow: inset 0px -2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.page-content .page-section.chapter-title .separator-line::after {
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 .page-content .page-section.no-height {
@@ -201,6 +251,14 @@
 	min-height: 130px;
 
 	padding-top: 0px;
+}
+
+.page-content .page-section .page-section-header {
+	padding-top: 5px;
+	margin-bottom: 10px;
+
+	font-size: 20px;
+	font-family: 'Ananda';
 }
 
 .page-content .separator-line {
