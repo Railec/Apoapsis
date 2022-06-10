@@ -1,0 +1,28 @@
+{
+	"pageAlign": "right",
+	"pageHeader": "<span class=\"sylvan\" title=\"Furry Fruit Tree\">Fur&ensp;Fruit&ensp;Tree</span>",
+	"imageSrc": "",
+	"sections": [
+		{
+			"content": "Fur Fruit Tree",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				"The Fur Fruit Tree is commonly found in high altitude regions,",
+				"where it provides a source of sustainance for the herbivorous creatures living there."
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": "",
+			"extraClass": "no-align"
+		}
+	]
+}

@@ -184,6 +184,10 @@
 	font-family: 'Ananda';
 }
 
+.page-content .page-section.no-height {
+	min-height: auto;
+}
+
 .page-content .page-section.translation-common {
 	min-height: 30px;
 

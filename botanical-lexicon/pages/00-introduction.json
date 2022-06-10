@@ -1,6 +1,37 @@
 {
 	"pageHeader": "Introduction",
 	"sections": [
-		{}
+		{
+			"content": [
+				"Greetings dear reader,"
+			],
+			"extraClass": "no-height"
+		},
+		{
+			"content": [
+				"However you may have come upon this book is not important,",
+				"what is important though, is that you have come seeking knowledge.<br/>",
+				"This book has been written in order to provide a source of information about ",
+				"a large number of different plants found throughout the world.<br/>",
+				"It is my hope as a scholar and an author that this book proves to be useful to you in some manner."
+			]
+		},
+		{
+			"content": [
+				"My name is Fanyawen Taurlóke.<br/>",
+				"I am a wood elf born in the forests of Hithmika.<br/>",
+				"In my youth I spent many days wandering among the trees of my home forest and in the company of the druids.",
+				"Upon claiming my adulthood at 98 years of age,",
+				"I set out into the world to learn more about it and the immense variety of plant life that covers it.<br/>",
+				"The information in this book has been gathered during my long journey across the continent,",
+				"compounded from many different sources including my own research."
+			]
+		},
+		{
+			"content": [
+				"While other sources might, and will, delve deeper into the specifics of many families of plant life,",
+				"this book should serve as a source for much more general information and will cover many different plants."
+			]
+		}
 	]
 }

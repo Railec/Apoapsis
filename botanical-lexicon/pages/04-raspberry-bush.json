@@ -1,0 +1,29 @@
+{
+	"pageAlign": "right",
+	"pageHeader": "<span class=\"sylvan\" title=\"Rough Ruby-coloured Bush\">Rough&ensp;Ruby&ensp;Bush</span>",
+	"imageSrc": "",
+	"sections": [
+		{
+			"content": "Raspberry Bush",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				"The Raspberry bush is found throughout the world in many different climates.",
+				"It thrives among the trees of many forests, but can also be found outside in higher altitudes.",
+				"It's name derives from the soft, sweet, but rough-looking berries that it grows."
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": "",
+			"extraClass": "no-align"
+		}
+	]
+}

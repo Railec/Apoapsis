@@ -1,0 +1,29 @@
+{
+	"pageAlign": "left",
+	"pageHeader": "<span class=\"sylvan\" title=\"White Sweet Vine\">White&ensp;Sweet&ensp;Vine</span>",
+	"imageSrc": "",
+	"sections": [
+		{
+			"content": "White Sweet Vine",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				"The White Sweet Vine is a plant that crawls and twists itself around other solid foundations,",
+				"be they trees or wooden sticks.",
+				"This plant requires a moist, but sunny, environment for it to thrive."
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": "",
+			"extraClass": "no-align"
+		}
+	]
+}
