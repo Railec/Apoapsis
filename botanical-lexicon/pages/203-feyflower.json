@@ -1,6 +1,6 @@
 {
 	"pageAlign": "left",
-	"pageHeader": "<span class=\"sylvan\" title=\" -> \">Feyflower</span>",
+	"pageHeader": "<span class=\"sylvan\" title=\"Alimalië Núlalma -> Fair-folk Mystery-flower\">Alimalie Nulalma</span>",
 	"imageSrc": "",
 	"sections": [
 		{
@@ -9,19 +9,22 @@
 		},
 		{
 			"content": [
-				""
+				"The Feyflower is very rare.",
+				"The exact conditions under which it grows are a bit mysterious,",
+				"but what is known is that it attacts the attention of minor fey.<br/>",
+				"The fey do not wish to own the flower, however, but simply admire it."
 			],
 			"extraClass": "description-short"
 		},
 		{
 			"header": "Common Uses",
-			"content": "",
+			"content": "Alchemical Ingredient",
 			"extraClass": "no-align"
 		},
 		{
 			"header": "Defining Characteristics",
 			"content": [
-				""
+				"The flower's petals have a strange iridescent colour and are shaped like a hexagon."
 			],
 			"extraClass": "no-align"
 		}

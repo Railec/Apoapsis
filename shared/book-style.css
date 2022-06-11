@@ -10,6 +10,7 @@
 	font-style: normal;
 	font-weight: normal;
 	src: url('./fonts/Rellanic.otf') format('truetype');
+	unicode-range: U+00-7F;
 }
 
 @font-face {
@@ -17,6 +18,7 @@
 	font-style: italic;
 	font-weight: normal;
 	src: url('./fonts/Rellanic\ Italic.otf') format('truetype');
+	unicode-range: U+00-7F;
 }
 
 @font-face {
@@ -24,6 +26,7 @@
 	font-style: normal;
 	font-weight: bold;
 	src: url('./fonts/Rellanic\ Bold.otf') format('truetype');
+	unicode-range: U+00-7F;
 }
 
 @font-face {
@@ -31,6 +34,7 @@
 	font-style: italic;
 	font-weight: bold;
 	src: url('./fonts/Rellanic\ Bold\ Italic.otf') format('truetype');
+	unicode-range: U+00-7F;
 }
 
 @font-face {

@@ -1,6 +1,6 @@
 {
 	"pageAlign": "left",
-	"pageHeader": "<span class=\"sylvan\" title=\"White Sweet Vine\">White&ensp;Sweet&ensp;Vine</span>",
+	"pageHeader": "<span class=\"sylvan\" title=\"Telpeta Hlikalma -> Silver Creeping-plant\">Telpeta&ensp;Hlikalma</span>",
 	"imageSrc": "",
 	"sections": [
 		{
@@ -17,12 +17,19 @@
 		},
 		{
 			"header": "Common Uses",
-			"content": "",
+			"content": "Decorative plant, Cooking ingredient",
 			"extraClass": "no-align"
 		},
 		{
 			"header": "Defining Characteristics",
-			"content": "",
+			"content": [
+				"The stem of the plant winds it way around whatever solid foundation it can find nearby,",
+				"it grows many smooth silver-green leaves which together form a dense cover.<br/>",
+				"Among the leaves there are also vivid purple flowers which after blooming grow into faded purple pods.<br/>",
+				"The pods contain a sweet white pulp,",
+				"often used in the preparations of confectionaries in the climates where this plant grows.<br/>",
+				"This plant can grow even without roots planted in the ground, but it grows much better if it is rooted."
+			],
 			"extraClass": "no-align"
 		}
 	]
