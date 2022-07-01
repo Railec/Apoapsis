@@ -1,0 +1,35 @@
+{
+	"pageAlign": "left",
+	"pageHeader": "<span class=\"sylvan\" title=\"Senya Salqe -> Common Grass\">Senya Salqa</span>",
+	"imageSrc": "./images/entry_common_grass.png",
+	"sections": [
+		{
+			"content": "&ensp;Common Grass",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				"Common Grass can be found nearly everywhere where plants can grow.",
+				"It is ubiquitous and acts as the basic sustainance for many herbivorous creatures."
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "Animal feed, Decorative plant",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": [
+				"Grasses appear to always grow in a very well defined pattern.<br/>",
+				"The stem grows leaves in an alternating manner.",
+				"The first leaf grows on either the left or right and the next will be on the opposite side from the first.",
+				"The third leaf will be on the same side as the first and the pattern continues in this manner.<br/>",
+				"Leaves appear to grow from the end at the stem.",
+				"The stem itself appears to be hollow except for at the base of each leaf.<br/>"
+			],
+			"extraClass": "no-align"
+		}
+	]
+}

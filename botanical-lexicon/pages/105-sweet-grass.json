@@ -1,0 +1,29 @@
+{
+	"pageAlign": "left",
+	"pageHeader": "<span class=\"sylvan\" title=\" -> Common-grass\"></span>",
+	"imageSrc": "",
+	"sections": [
+		{
+			"content": "&ensp;Sweet Grass",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				""
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "Cooking ingredient",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": [
+				""
+			],
+			"extraClass": "no-align"
+		}
+	]
+}

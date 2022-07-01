@@ -1,0 +1,37 @@
+{
+	"pageAlign": "left",
+	"pageHeader": "<span class=\"sylvan\" title=\" Salqa -> Grass\">Salqa</span>",
+	"imageSrc": "./images/entry_maize_grass.png",
+	"sections": [
+		{
+			"content": "&ensp;Maize Grass",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				"Maize Grass is a plant fairly similar in structure to Common Grass,",
+				"but it grows much taller and produces edible seeds.",
+				"It is more easily grown in more arid regions rather than those with wetter climes."
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "Animal feed, Cooking ingredient",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": [
+				"The maize grass plant is fairly tall, easily growing up to the height of an adult male human.",
+				"At the very tip is a tassel of small flower structures.<br/>",
+				"Like all grasses, the maize grass plant also grows leaves along the stem in an alternating fashion.<br/>",
+				"Near the middle of the plant, the leaves sheathe a husk containing the plant's seeds.",
+				"Inside of the husk is a cylindrical fiberous core that the pale yellow seeds are attached to.<br/>",
+				"At the end of the seed husk is a bunch of fiberous \"silk\"-like material.",
+				"This \"silk\" changes colour based on how mature the plant is, going from pale green to a shade of purple."
+			],
+			"extraClass": "no-align"
+		}
+	]
+}

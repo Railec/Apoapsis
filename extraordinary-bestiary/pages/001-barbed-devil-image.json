@@ -1,0 +1,17 @@
+{
+    "pageHeader": "Barbed&ensp;Devil",
+    "imageSrc": "./images/entry_barbed_devil.png",
+    "sections": [
+        {
+            "content": "Murderous",
+            "extraClass": "danger-rating-high"
+        },
+        {
+            "content": [
+                "A dangerous fiend whose layer of barbs offer protection against most weaponry",
+                "and whose sharp claws easily rend flesh."
+            ],
+            "extraClass": "description-short"
+        }
+    ]
+}

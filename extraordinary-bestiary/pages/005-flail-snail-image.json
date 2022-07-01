@@ -1,0 +1,17 @@
+{
+    "pageHeader": "Flail Snail",
+    "imageSrc": "./images/entry_flail_snail.png",
+    "sections": [
+        {
+            "content": "Dangerous",
+            "extraClass": "danger-rating-high"
+        },
+        {
+            "content": [
+                "A creature that resembles a snail,.",
+                "except much larger and excessively dangerous.",
+                "It's flails are deadly in number."
+            ]
+        }
+    ]
+}

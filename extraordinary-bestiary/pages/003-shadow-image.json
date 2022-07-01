@@ -1,0 +1,17 @@
+{
+    "pageHeader": "Shadow",
+    "imageSrc": "./images/entry_shadow.png",
+    "sections": [
+        {
+            "content": "Stealthy, Murderous",
+            "extraClass": "danger-rating-high"
+        },
+        {
+            "content": [
+                "A dangerous creature made of a blackened amorphous ooze.",
+                "It hides in shadows and darkened rafters.",
+                "It's attacks drain one's life essence."
+            ]
+        }
+    ]
+}

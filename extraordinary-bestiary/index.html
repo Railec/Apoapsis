@@ -6,95 +6,48 @@
 	<script src="../shared/pageFlipInit.js"></script>
 	<script src="../shared/pageFlipUtility.js"></script>
 	<script>
-		var pages = [
-			PageFlipPages.constructPage({
-				pageHeader: 'Introduction',
-				sections: [
-					{
+		//type = normal | small-image | large-image
+		function Page(path, type = "normal") {
+			return { path: path, type: type };
+		}
 
+		async function onLoad() {
+			var pages = [
+				Page("./pages/000-introduction.json"),
+				Page("./pages/001-barbed-devil-image.json", 'large-image'),
+				Page("./pages/002-barbed-devil-details.json"),
+				Page("./pages/003-shadow-image.json", 'large-image'),
+				Page("./pages/004-shadow-details.json"),
+				Page("./pages/005-flail-snail-image.json", 'large-image'),
+				Page("./pages/006-flail-snail-details.json")
+			];
+
+			var htmlPages = [];
+
+			for (var id in pages) {
+				var json = await PageFlipUtility.loadJSONFromFile(pages[id].path);
+				if (json) {
+					if (pages[id].type == 'normal') {
+						htmlPages.push(PageFlipPages.constructPage(json));
+					} else if (pages[id].type == 'small-image') {
+						htmlPages.push(PageFlipPages.constructPageWithSmallImage(json));
+					} else if (pages[id].type == 'large-image') {
+						htmlPages.push(PageFlipPages.constructPageWithLargeImage(json));
 					}
-				]
-			}),
-			PageFlipPages.constructPageWithLargeImage({
-				pageHeader: 'Barbed&ensp;Devil',
-				imageSrc: './images/entry_barbed_devil.png',
-				sections: [
-					{
-						content: 'Murderous',
-						extraClass: 'danger-rating-high'
-					},
-					{
-						content: 'A dangerous fiend whose layer of barbs offer protection against most weaponry and whose sharp claws easily rend flesh.',
-						extraClass: 'description-short'
-					}
-				]
-			}),
-			PageFlipPages.constructPage({
-				sections: [
-					{
-						header: 'Physical&ensp;Characteristics',
-						content: ''
-					},
-					{
-						header: 'Observed&ensp;Behaviours',
-						content: ''
-					},
-					{
-						header: 'Offensive&ensp;Capabilities',
-						content: ''
-					},
-					{
-						header: 'Defensive&ensp;Capabilities',
-						content: ''
-					},
-					{
-						header: 'Examination&ensp;Notes'
-					}
-				]
-			}),
-			PageFlipPages.constructPageWithLargeImage({
-				pageHeader: 'Shadow',
-				imageSrc: './images/entry_shadow.png',
-				sections: [
-					{
-						content: 'Stealthy, Murderous',
-						extraClass: 'danger-rating-high'
-					},
-					{
-						content: 'A dangerous creature made of a blackened amorphous ooze. It hides in shadows and darkened rafters. It\'s attacks drain one\'s life essence.'
-					}
-				]
-			}),
-			PageFlipPages.constructPage({
-				sections: [
-					{
-						header: 'Physical&ensp;Characteristics',
-						content: ''
-					},
-					{
-						header: 'Observed&ensp;Behaviours',
-						content: ''
-					},
-					{
-						header: 'Offensive&ensp;Capabilities',
-						content: ''
-					},
-					{
-						header: 'Defensive&ensp;Capabilities',
-						content: ''
-					},
-					{
-						header: 'Examination&ensp;Notes'
-					}
-				]
-			})
-		];
+				} else {
+					console.error("onLoad: failed to load and/or parse file '" + pages[id].path + "'.");
+				}
+			}
+
+			appendPages('bestiary', htmlPages);
+			pageFlipInit('bestiary');
+		}
 	</script>
 	<link href="../shared/book-style.css" rel="stylesheet" type="text/css" />
 	<link href="extraordinary-bestiary.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="appendPages('bestiary', pages); pageFlipInit('bestiary')">
+<body onload="onLoad()">
 	<div class="book-container" id="bestiary">
 		<div class="page-container page-cover front">
 			<div class="page-header" title="book describing strange creatures -> Parma ostecie aie raucor">
