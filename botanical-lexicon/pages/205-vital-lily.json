@@ -1,0 +1,35 @@
+{
+	"pageAlign": "left",
+	"pageHeader": "<span class=\"sylvan\" title=\"->\"></span>",
+	"imageSrc": "",
+	"sections": [
+		{
+			"content": "&ensp;Vital Lily",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				"The Vital Lily is so named because of its surprising hardiness",
+                "and its distinct alchemical and medical characteristics.<br/>",
+                "It takes effort and time to grow, but once grown is very difficult to kill."
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "Decorative flower, Cooking ingredient, Alchemical ingredient, Medicinal ingredient",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": [
+				"The flower on this plant has a very distinct cone shape with filaments that stick out",
+                "and the petals have a deep blood red color.<br/>",
+                "The lily can grow up to an arm's length high and can have multiple flowers.",
+                "When the stem splits, the joint is decorated by multiple large smooth leaves.<br/>",
+                "At the lily's base, under the soil, is a large bulb from which roots spring."
+			],
+			"extraClass": "no-align"
+		}
+	]
+}

@@ -18,13 +18,17 @@
 		},
 		{
 			"header": "Common Uses",
-			"content": "Alchemical Ingredient",
+			"content": "Alchemical ingredient, Magical reagent",
 			"extraClass": "no-align"
 		},
 		{
 			"header": "Defining Characteristics",
 			"content": [
-				"The flower's petals have a strange iridescent colour and are shaped like a hexagon."
+				"The flower's petals have a strange iridescent colour and are shaped like a hexagon.<br/>",
+				"At the centre of the flower is a soft material with the appearance of a gem.",
+				"The color of the gem varies greatly between individual flowers.<br/>",
+				"The stem of the Feyflower is mostly straight, with at most one large leaf near the ground.",
+				"The length of the stem can grow up to the length of a large hand and the leaf follows suit."
 			],
 			"extraClass": "no-align"
 		}

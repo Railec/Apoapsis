@@ -1,0 +1,37 @@
+{
+	"pageAlign": "left",
+	"pageHeader": "<span class=\"sylvan\" title=\"->\"></span>",
+	"imageSrc": "",
+	"sections": [
+		{
+			"content": "&ensp;Dragon Thorn",
+			"extraClass": "translation-common"
+		},
+		{
+			"content": [
+				"The Dragon Thorn is an odd plant.",
+				"It can be found nearly anywhere in the world,",
+                "most often after the sighting of a dragon in the region.</br>",
+				"Once grown it survives off of dense concentrations of magic."
+			],
+			"extraClass": "description-short"
+		},
+		{
+			"header": "Common Uses",
+			"content": "Alchemical ingredient, Magical reagent",
+			"extraClass": "no-align"
+		},
+		{
+			"header": "Defining Characteristics",
+			"content": [
+				"The Dragon Thorn has a flower at the tip of the stem that is deep purple in color.<br/>",
+                "The flower has short triangular leaves and is protected by three green thorny leaves",
+                "that stick out with nearly perfect symmetry.<br/>",
+                "The stem of the plant is decorated with leaves in similar patterns.<br/>",
+				"The flower smells different depending on how attuned to magic a person is,",
+				"this ranges from a sweet scent to wet grass."
+			],
+			"extraClass": "no-align"
+		}
+	]
+}
